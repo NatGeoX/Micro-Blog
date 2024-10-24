@@ -1,4 +1,4 @@
-##Personal Micro-Blog
+## Personal Micro-Blog
 
 Welcome to the open-source version of my personal micro-blog! This project is a minimalist, user-friendly micro-blogging platform designed for those who want to share thoughts, daily goals, and life events in a simple, streamlined way.
 
