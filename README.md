@@ -1,5 +1,7 @@
 ## Personal Micro-Blog
 
+![Alt text](https://i.postimg.cc/zXQf0PfD/Screenshot-2024-10-24-150234.png)
+
 Welcome to the open-source version of my personal micro-blog! This project is a minimalist, user-friendly micro-blogging platform designed for those who want to share thoughts, daily goals, and life events in a simple, streamlined way.
 
 **Features** 
