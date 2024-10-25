@@ -1,4 +1,7 @@
 <?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 // generate_image.php
 header('Content-Type: application/json');
 
@@ -33,7 +36,7 @@ if ($id <= 0 || empty($text_entry)) {
 }
 
 // OpenAI API Configuration
-$apiKey = 'API_KEY'; // Replace with your actual API key
+$apiKey = 'API-HERE'; // Replace with your actual API key
 
 // Step 1: Generate a prompt from the status text
 $promptGenerationUrl = 'https://api.openai.com/v1/chat/completions';
