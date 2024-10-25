@@ -10,10 +10,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Function to select an emoji and update the hidden input field
     function selectEmoji(emoji) {
-        selectedEmoji.value = emoji; 
-        emojiPicker.textContent = emoji; 
-        toggleEmojiPopup();  
-        console.log("Emoji selected:", emoji); 
+        selectedEmoji.value = emoji; // Update hidden input with selected emoji
+        emojiPicker.textContent = emoji; // Update the emoji picker with the selected emoji
+        toggleEmojiPopup();  // Close the emoji popup after selection
+        console.log("Emoji selected:", emoji); // Debugging to see the selected emoji
     }
 
     // Event listener to toggle the emoji popup on emoji picker click
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Event listener to handle emoji selection
     emojiPopup.addEventListener('click', (event) => {
         if (event.target.tagName === 'SPAN') {
-            selectEmoji(event.target.textContent); 
+            selectEmoji(event.target.textContent); // Pass the emoji text to the selectEmoji function
         }
     });
         
@@ -143,7 +143,12 @@ document.addEventListener('DOMContentLoaded', () => {
         $('#imageModal').modal('show');
     }
 });
+// Ensure Axios is loaded
+// You can include Axios via CDN in your HTML head or before this script
+// <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
+// Function to refine status using OpenAI
+// Function to refine status using OpenAI
 async function refineStatus(entryId) {
     const textSpan = document.querySelector(`#entry-${entryId} .text-entry`);
     const currentText = textSpan.innerText;
