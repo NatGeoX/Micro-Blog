@@ -1245,6 +1245,18 @@ $goals_result->close();
                 </ul>
             </div>
         <?php endif; ?>
+<!-- JavaScript Dependencies and Custom Scripts -->
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+<!-- Popper.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!-- Your Custom Script -->
+<script src="script.js"></script>
 
         <!-- Success Modals -->
         <?php if ($recordCreated): ?>
@@ -1465,6 +1477,6 @@ $goals_result->close();
             });
         }
     </script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+   
 </body>
 </html>
